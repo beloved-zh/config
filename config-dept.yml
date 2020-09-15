@@ -5,16 +5,6 @@ spring:
 ---
 spring:
   profiles: dev
-server:
-  port: 8000
-
-# mybatis配置
-mybatis:
-  type-aliases-package: com.zh.pojo
-  mapper-locations: classpath:mybatis/mapper/*.xml
-
-# spring配置
-spring:
   application:
     name: SpringCloud-provider-dept
   datasource:
@@ -23,6 +13,13 @@ spring:
     url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
+server:
+  port: 8000
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.zh.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
 
 # Eureka配置 注册服务
 eureka:
@@ -43,16 +40,6 @@ info:
 ---
 spring:
   profiles: test
-server:
-  port: 8001
-
-# mybatis配置
-mybatis:
-  type-aliases-package: com.zh.pojo
-  mapper-locations: classpath:mybatis/mapper/*.xml
-
-# spring配置
-spring:
   application:
     name: SpringCloud-provider-dept
   datasource:
@@ -61,6 +48,13 @@ spring:
     url: jdbc:mysql://localhost:3306/db02?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
+server:
+  port: 8001
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.zh.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
 
 # Eureka配置 注册服务
 eureka:
