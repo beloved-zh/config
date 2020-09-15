@@ -39,10 +39,10 @@ info:
   user:
     name: zhh
     email: 1425279634@qq.com
-    
+      
 ---
 spring:
-  profiles: test   
+  profiles: test
 server:
   port: 8001
 
