@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: SpringCloud-config-client-3355
+server:
+  port: 3355
+
+
+
+---
+spring:
+  profiles: test
+  application:
+    name: SpringCloud-config-client-3356
+server:
+  port: 3356
+
+
+
